@@ -218,9 +218,9 @@
                     </li>
                     <li><a href="about.html">About</a>
                     </li>
-                    <li><a href="gallery.html">Gallery</a>
+                    <li class="active"><a href="gallery.html">Gallery</a>
                     </li>
-                    <li class="active"><a href="contacts.html">Contacts</a>
+                    <li><a href="contacts.html">Contacts</a>
                     </li>
                     <li class="header-enquiry">
                       <div>
@@ -241,7 +241,7 @@
               <div class="container">
                 <div class="row justify-content-sm-center">
                   <div class="col-md-10 col-xl-8">
-                    <h2 class="heading-decorated" style="opacity: 0 !important">Contact Us</h2>
+                    <h2 class="heading-decorated" style="opacity: 0 !important">Gallery</h2>
                   </div>
                 </div>
               </div>
@@ -249,72 +249,176 @@
           </div>
         </div>
       </section>
-      <section class="section-md bg-default decor-text" data-content="Contact">
+
+      <!-- portfolio-->
+      <section class="section-md bg-default text-center">
+        <div class="bg-decor d-flex align-items-center" data-parallax-scroll="{&quot;y&quot;: 50,  &quot;smoothness&quot;: 30}"><img src="images/bg-decor-6.png" alt=""/>
+        </div>
         <div class="container">
-          <div class="row row-50">
-            <div class="col-md-5 col-lg-4">
-              <h4 class="heading-decorated">Contact Details</h4>
-              <ul class="list-sm contact-info">
-                <li>
-                  <dl class="list-terms-inline">
-                    <dt>Address</dt>
-                    <dd>L-3/1B, Sri Krishnapuri, Boring Road, Patna - 800001</dd>
-                  </dl>
-                </li>
-                <li>
-                  <dl class="list-terms-inline">
-                    <dt>Phones</dt>
-                    <dd>
-                      <ul class="list-semicolon">
-                        <li><a href="tel:+919546888889" style="color: #000">+91 9546888889</a></li>
-                        <li><a href="tel:+919546888889" style="color: #000">+91 9546888889</a></li>
-                      </ul>
-                    </dd>
-                  </dl>
-                </li>
-                <li>
-                  <dl class="list-terms-inline">
-                    <dt>Opening Hours</dt>
-                    <dd>Mn-Fr: 10 am-8 pm</dd>
-                  </dl>
-                </li>
-                <li>
-                  <ul class="list-inline-sm">
-                    <li><a class="icon-sm fa-facebook icon" href="#"></a></li>
-                    <li><a class="icon-sm fa-twitter icon" href="#"></a></li>
-                    <li><a class="icon-sm fa-google-plus icon" href="#"></a></li>
-                    <li><a class="icon-sm fa-vimeo icon" href="#"></a></li>
-                    <li><a class="icon-sm fa-youtube icon" href="#"></a></li>
-                    <li><a class="icon-sm fa-pinterest-p icon" href="#"></a></li>
-                  </ul>
-                </li>
+          <h4 class="heading-decorated">Gallery</h4>
+          <div class="isotope-wrap row row-70">
+            <div class="col-sm-12">
+              <ul class="list-nav isotope-filters isotope-filters-horizontal">
+                <li><a class="active" data-isotope-filter="*" data-isotope-group="gallery" href="#">All</a></li>
+                <li><a data-isotope-filter="Category 1" data-isotope-group="gallery" href="#">Machines</a></li>
+                <li><a data-isotope-filter="Category 2" data-isotope-group="gallery" href="#">Working</a></li>
               </ul>
-            </div>
-            <div class="col-md-7 col-lg-8">
-              <h4 class="heading-decorated">Get in Touch</h4>
-              <!-- RD Mailform-->
-              <form class="rd-mailform rd-mailform_style-1 form-shadow" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
-                <div class="form-wrap form-wrap_icon linear-icon-man">
-                  <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
-                  <label class="form-label" for="contact-name">Your name</label>
+              <div class="isotope row" data-isotope-layout="fitRows" data-isotope-group="gallery">
+                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category 1"><a class="img-thumbnail-variant-3" href="#"><img src="images/jet-machine-cleaning.png" alt="" width="418" height="315"/><span class="label-custom label-white">Link</span>
+                          <div class="caption"><span class="icon hover-top-element linear-icon-folder-picture"></span>
+                            <ul class="list-inline-tag hover-top-element">
+                              <li>9 photos</li>
+                              <li>Web Development</li>
+                            </ul>
+                            <p class="heading-5 hover-top-element">Peterson Ltd.</p>
+                            <div class="divider"></div>
+                            <p class="small hover-bottom-element">Creative projects &amp; ideas</p><span class="icon arrow-right linear-icon-arrow-right"></span>
+                          </div></a>
                 </div>
-                <div class="form-wrap form-wrap_icon linear-icon-telephone">
-                  <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
-                  <label class="form-label" for="contact-email">Your number</label>
+                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category 1"><a class="img-thumbnail-variant-3" href="images/floor-polishing-machine.png" data-lightgallery="item">
+                          <figure><img src="images/floor-polishing-machine.png" alt="" width="418" height="315"/>
+                          </figure>
+                          <div class="caption"><span class="icon hover-top-element linear-icon-picture"></span>
+                            <ul class="list-inline-tag hover-top-element">
+                              <li>Web Design</li>
+                            </ul>
+                            <p class="heading-5 hover-top-element">Kreative Co.</p>
+                            <div class="divider"></div>
+                            <p class="small hover-bottom-element">Creative projects &amp; ideas</p><span class="icon arrow-right linear-icon-plus"></span>
+                          </div></a>
                 </div>
-                <div class="form-wrap form-wrap_icon linear-icon-feather">
-                  <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
-                  <label class="form-label" for="contact-message">Your message</label>
+                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category 1"><a class="img-thumbnail-variant-3" href="images/hand-held-cleaner.png" data-lightgallery="item">
+                          <figure><img src="images/hand-held-cleaner.png" alt="" width="418" height="315"/>
+                          </figure>
+                          <div class="caption"><span class="icon hover-top-element linear-icon-picture"></span>
+                            <ul class="list-inline-tag hover-top-element">
+                              <li>Web Development</li>
+                            </ul>
+                            <p class="heading-5 hover-top-element">Architex</p>
+                            <div class="divider"></div>
+                            <p class="small hover-bottom-element">Creative projects &amp; ideas</p><span class="icon arrow-right linear-icon-plus"></span>
+                          </div></a>
                 </div>
-                <button class="button button-primary button-shadow" type="submit">send</button>
-              </form>
+                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category 1"><a class="img-thumbnail-variant-3" href="images/scrubber.png" data-lightgallery="item">
+                          <figure><img src="images/scrubber.png" alt="" width="418" height="315"/>
+                          </figure>
+                          <div class="caption"><span class="icon hover-top-element linear-icon-picture"></span>
+                            <ul class="list-inline-tag hover-top-element">
+                              <li>Web Design</li>
+                            </ul>
+                            <p class="heading-5 hover-top-element">Colorful Studios</p>
+                            <div class="divider"></div>
+                            <p class="small hover-bottom-element">Creative projects &amp; ideas</p><span class="icon arrow-right linear-icon-plus"></span>
+                          </div></a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category 1"><a class="img-thumbnail-variant-3" href="#"><img src="images/Industrial-Vacuum-Cleaner.png" alt="" width="418" height="315"/><span class="label-custom label-white">Link</span>
+                          <div class="caption"><span class="icon hover-top-element linear-icon-folder-picture"></span>
+                            <ul class="list-inline-tag hover-top-element">
+                              <li>9 photos</li>
+                              <li>Web Design</li>
+                            </ul>
+                            <p class="heading-5 hover-top-element">BlueLine</p>
+                            <div class="divider"></div>
+                            <p class="small hover-bottom-element">Creative projects &amp; ideas</p><span class="icon arrow-right linear-icon-arrow-right"></span>
+                          </div></a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category 1"><a class="img-thumbnail-variant-3" href="images/Backpack-Vacuum.png" data-lightgallery="item">
+                          <figure><img src="images/Backpack-Vacuum.png" alt="" width="418" height="315"/>
+                          </figure>
+                          <div class="caption"><span class="icon hover-top-element linear-icon-picture"></span>
+                            <ul class="list-inline-tag hover-top-element">
+                              <li>Web Development</li>
+                            </ul>
+                            <p class="heading-5 hover-top-element">EOC Ltd.</p>
+                            <div class="divider"></div>
+                            <p class="small hover-bottom-element">Creative projects &amp; ideas</p><span class="icon arrow-right linear-icon-plus"></span>
+                          </div></a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category 1"><a class="img-thumbnail-variant-3" href="images/foam-generator.png" data-lightgallery="item">
+                          <figure><img src="images/foam-generator.png" alt="" width="418" height="315"/>
+                          </figure>
+                          <div class="caption"><span class="icon hover-top-element linear-icon-picture"></span>
+                            <ul class="list-inline-tag hover-top-element">
+                              <li>Web Development</li>
+                            </ul>
+                            <p class="heading-5 hover-top-element">SlabTek Inc.</p>
+                            <div class="divider"></div>
+                            <p class="small hover-bottom-element">Creative projects &amp; ideas</p><span class="icon arrow-right linear-icon-plus"></span>
+                          </div></a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category 2"><a class="img-thumbnail-variant-3" href="images/commercial-carpet-cleaining.jpg" data-lightgallery="item">
+                          <figure><img src="images/commercial-carpet-cleaining.jpg" alt="" width="418" height="315"/>
+                          </figure>
+                          <div class="caption"><span class="icon hover-top-element linear-icon-picture"></span>
+                            <ul class="list-inline-tag hover-top-element">
+                              <li>Web Development</li>
+                            </ul>
+                            <p class="heading-5 hover-top-element">TSB Studios</p>
+                            <div class="divider"></div>
+                            <p class="small hover-bottom-element">Creative projects &amp; ideas</p><span class="icon arrow-right linear-icon-plus"></span>
+                          </div></a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category 2"><a class="img-thumbnail-variant-3" href="#"><img src="images/1608860980522.jpg" alt="" width="418" height="315"/><span class="label-custom label-white">Link</span>
+                          <div class="caption"><span class="icon hover-top-element linear-icon-folder-picture"></span>
+                            <ul class="list-inline-tag hover-top-element">
+                              <li>9 photos</li>
+                              <li>Web Design</li>
+                            </ul>
+                            <p class="heading-5 hover-top-element">R-Bay Ltd.</p>
+                            <div class="divider"></div>
+                            <p class="small hover-bottom-element">Creative projects &amp; ideas</p><span class="icon arrow-right linear-icon-arrow-right"></span>
+                          </div></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7196.847602250075!2d85.119758!3d25.59083!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6387fb3ca29710e2!2sDamya!5e0!3m2!1sen!2sin!4v1613054748474!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
+      <!--cta-->
+      <!-- Call to Action-->
+      <section class="section-md bg-accent bg-image text-center bg-overlay-darker" style="background-image: url(images/home-cleaning.jpg); background-position: center 50%;">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-md-11 col-lg-9 col-xl-8"> 
+              <h3 class="heading-decorated">Haven’t Found What You Want? Feel free to get in touch</h3><a class="button button-primary" href="tel:+919546888889">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-md text-center bg-default">
+        <div class="bg-decor d-flex align-items-center justify-content-end" data-parallax-scroll="{&quot;y&quot;: 130, &quot;smoothness&quot;: 30}"><img src="images/bg-decor-4.png" alt=""/>
+        </div>
+        <div class="container">
+          <h4 class="heading-decorated">Our Clients</h4>
+          <div class="row row-30">
+            <div class="col-sm-6 col-md-3">
+              <figure class="box-icon-image"><a href="#"><img src="images/bihar-state-co-op-bank-logo.png" alt="" height="102px"/></a></figure>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <figure class="box-icon-image"><a href="#"><img src="images/carnival-cinemas.png" alt="" height="102px"/></a></figure>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <figure class="box-icon-image"><a href="#"><img src="images/heart-hospital-logo.png" alt="" height="102px"/></a></figure>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <figure class="box-icon-image"><a href="#"><img src="images/regent-fun-cinemas-bakerganj-patna-cinema-halls.png" alt="" height="102px"/></a></figure>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <figure class="box-icon-image"><a href="#"><img src="images/sahu-cinemax.png" alt="" height="102px"/></a></figure>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <figure class="box-icon-image"><a href="#"><img src="images/sri-ram-hospital-logo.png" alt="" height="102px"/></a></figure>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <figure class="box-icon-image"><a href="#"><img src="images/srs-cinemas.jpg" alt="" height="102px"/></a></figure>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <figure class="box-icon-image"><a href="#"><img src="images/tara-hospital-and-medical-research-centre-patna.png" alt="" height="102px"/></a></figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Page Footer--><!-- <a class="banner" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" target="_blank"><img src="images/intense_big_02.jpg" alt="" height="0"/></a> -->
       <section class="pre-footer-corporate bg-image-7 bg-overlay-darkest">
         <div class="container">
           <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
@@ -549,5 +653,34 @@
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+    <script type="text/javascript">
+      // number count for stats, using jQuery animate
+
+      $('.counting').each(function() {
+        var $this = $(this),
+            countTo = $this.attr('data-count');
+        
+        $({ countNum: $this.text()}).animate({
+          countNum: countTo
+        },
+
+        {
+
+          duration: 3000,
+          easing:'linear',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+
+        });  
+        
+
+      });
+    </script>
+    <script type="js/form.js"></script>
   </body>
 </html>
