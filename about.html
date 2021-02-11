@@ -47,6 +47,85 @@
     #counter-stats h5 {
       color: #19629b;
     }
+
+    .landmark li {
+      width: 150px;
+      /*padding: 35px;*/
+      display: inline-block;
+      margin: 0 20px;
+      cursor: pointer;
+    }
+
+    /*.landmark .landmark-top {
+      transition: 0.05s ease;
+    }
+
+    .landmark .year {
+      transition: 0.05s ease;
+    }*/
+
+    .landmark li .year  {
+      width: 150px;
+      padding-top: 95px;
+      padding-bottom: 20px;
+      font-size: 25px;
+      font-weight: bold;
+    }  
+
+    .landmark .active .year {
+      text-align: center;
+      display: block;
+      border: 2px solid #000;
+      background: #fff;
+      padding: 20px 0 !important;
+    }
+
+    .active .landmark-top {
+      height: 75px;
+      width: 150px;
+      border-radius: 75px 75px 0 0;
+      background: #ffd822;
+      display: block;
+      border: 2px solid #000;
+    }
+
+    .lankmark-description ul {
+      list-style-type: circle;
+    }
+
+    .landmark::-webkit-scrollbar-track
+    {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      background-color: #F5F5F5;
+      border-radius: 10px;
+    }
+
+    .landmark::-webkit-scrollbar
+    {
+      width: 10px;
+      background-color: #F5F5F5;
+    }
+
+    .landmark::-webkit-scrollbar-thumb
+    {
+      background-color: #000;
+      border-radius: 10px;
+      background-image: -webkit-linear-gradient(0deg,
+                                                rgba(255, 255, 255, 0.5) 25%,
+                            transparent 25%,
+                            transparent 50%,
+                            rgba(255, 255, 255, 0.5) 50%,
+                            rgba(255, 255, 255, 0.5) 75%,
+                            transparent 75%,
+                            transparent)
+    }
+    .lankmark-description ul {
+      display: none;
+    }
+
+    .dis-block {
+      display: block !important;
+    }
     </style>
   </head>
   <body>
@@ -396,6 +475,284 @@
 
       </section>
 
+      <section style="padding: 50px 0">
+        <h4 class="heading-decorated" style="text-align: center;">OUR STORY</h4>
+        <ul class="landmark" style="margin: auto; text-align: center; overflow-x: auto; display: flex; padding: 50px 0">
+          <li  class="active">
+            <figure class="button-shadow">
+              <div class="landmark-top"></div>
+              <div class="year">
+                2001
+              </div>
+            </figure>
+          </li>
+          <li class="">
+            <figure class="button-shadow">
+              <div class="landmark-top"></div>
+              <div class="year">
+                2002
+              </div>
+            </figure>
+          </li>
+          <li class="">
+            <figure class="button-shadow">
+              <div class="landmark-top"></div>
+              <div class="year">
+                2003
+              </div>
+            </figure>
+          </li>
+          <li>
+            <figure class="button-shadow">
+              <div class="landmark-top"></div>
+              <div class="year">
+                2004
+              </div>
+            </figure>
+          </li>
+          <li>
+            <figure class="button-shadow">
+              <div class="landmark-top"></div>
+              <div class="year">
+                2005
+              </div>
+            </figure>
+          </li>
+          <li>
+            <figure class="button-shadow">
+              <div class="landmark-top"></div>
+              <div class="year">
+                2006
+              </div>
+            </figure>
+          </li>
+          <li>
+            <figure class="button-shadow">
+              <div class="landmark-top"></div>
+              <div class="year">
+                2007
+              </div>
+            </figure>
+          </li>
+          <li>
+            <figure class="button-shadow">
+              <div class="landmark-top"></div>
+              <div class="year">
+                2008
+              </div>
+            </figure>
+          </li>
+          <li>
+            <figure class="button-shadow">
+              <div class="landmark-top"></div>
+              <div class="year">
+                2009
+              </div>
+            </figure>
+          </li>
+          <li>
+            <figure class="button-shadow">
+              <div class="landmark-top"></div>
+              <div class="year">
+                2010
+              </div>
+            </figure>
+          </li>
+        </ul>
+        <div class="lankmark-description container" style="padding: 50px 0;">
+          <ul class="dis-block landmark-details" style="list-style-type: disc !important;">
+            <li>
+              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> 1 &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+            </br>
+            <li>
+              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+          </ul>
+          <ul class="landmark-details" style="list-style-type: disc !important;">
+            <li>
+              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> 2 &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+            </br>
+            <li>
+              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+          </ul>
+          <ul class="landmark-details" style="list-style-type: disc !important">
+            <li>
+              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> 3 &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+            </br>
+            <li>
+              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+          </ul>
+          <ul class="landmark-details" style="list-style-type: disc !important">
+            <li>
+              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+            </br>
+            <li>
+              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+          </ul>
+          <ul class="landmark-details" style="list-style-type: disc !important">
+            <li>
+              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+            </br>
+            <li>
+              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+          </ul>
+          <ul class="landmark-details" style="list-style-type: disc !important">
+            <li>
+              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+            </br>
+            <li>
+              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+          </ul>
+          <ul class="landmark-details" style="list-style-type: disc !important">
+            <li>
+              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+            </br>
+            <li>
+              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+          </ul>
+          <ul class="landmark-details" style="list-style-type: disc !important">
+            <li>
+              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+            </br>
+            <li>
+              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+          </ul>
+          <ul class="landmark-details" style="list-style-type: disc !important">
+            <li>
+              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+            </br>
+            <li>
+              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+          </ul>
+          <ul class="landmark-details" style="list-style-type: disc !important">
+            <li>
+              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+            </br>
+            <li>
+              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <!-- Testimonials-->
       <section class="section-md bg-default text-center decor-text" data-content="Testimonials">
         <div class="container">
@@ -697,6 +1054,38 @@
         });  
         
 
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+          $('.landmark li').click(function(e) {
+
+              $('.landmark li.active').removeClass('active');
+
+              var index = $(this).index();
+
+              console.log(index);
+
+              // var list = document.getElementsByClassName("landmark-details");
+
+              // var active = document.getElementsByClassName("dis-block");
+
+              // active.classList.remove("dis-block");
+
+              // list[index].classList.add("dis-block");
+
+              $('.dis-block').removeClass("dis-block");
+
+              var list = $(".landmark-details");
+
+              $(list[index]).addClass("dis-block");
+
+              // $(".lankmark-description ul:eq(index)").css("display", "block");
+
+              var $parentDiv = $(this);
+              $parentDiv.addClass('active');
+              e.preventDefault();
+          });
       });
     </script>
   </body>
