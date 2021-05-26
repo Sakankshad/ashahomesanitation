@@ -22,7 +22,7 @@
     section#counter-stats {
       display: flex;
       justify-content: center;
-      background: #80deea;
+      background: #19629b;
       padding-top: 50px;
       padding-bottom: 100px;
     }
@@ -35,17 +35,17 @@
     }
 
     .stats .fa {
-      color: #19629b;
+      color: #fff;
       font-size: 60px;
       margin-top: 50px;
     }
 
-    .counting {
-      color: #19629b;
+    .counting, .stats span {
+      color: #fff;
     }
 
     #counter-stats h5 {
-      color: #19629b;
+      color: #fff;
     }
 
     .landmark li {
@@ -55,14 +55,6 @@
       margin: 0 20px;
       cursor: pointer;
     }
-
-    /*.landmark .landmark-top {
-      transition: 0.05s ease;
-    }
-
-    .landmark .year {
-      transition: 0.05s ease;
-    }*/
 
     .landmark li .year  {
       width: 150px;
@@ -75,9 +67,14 @@
     .landmark .active .year {
       text-align: center;
       display: block;
-      border: 2px solid #000;
+      border: 5px solid #000;
       background: #fff;
       padding: 20px 0 !important;
+      -webkit-animation: testim-show .5s ease-in-out forwards;            
+      -moz-animation: testim-show .5s ease-in-out forwards;            
+      -ms-animation: testim-show .5s ease-in-out forwards;            
+      -o-animation: testim-show .5s ease-in-out forwards; 
+      animation: testim-show .5s ease-in-out forwards;
     }
 
     .active .landmark-top {
@@ -86,7 +83,13 @@
       border-radius: 75px 75px 0 0;
       background: #ffd822;
       display: block;
-      border: 2px solid #000;
+      border: 5px solid #000;
+      border-bottom: 0px;
+      -webkit-animation: testim-show .5s ease-in-out forwards;            
+      -moz-animation: testim-show .5s ease-in-out forwards;            
+      -ms-animation: testim-show .5s ease-in-out forwards;            
+      -o-animation: testim-show .5s ease-in-out forwards; 
+      animation: testim-show .5s ease-in-out forwards; 
     }
 
     .lankmark-description ul {
@@ -111,7 +114,7 @@
       background-color: #000;
       border-radius: 10px;
       background-image: -webkit-linear-gradient(0deg,
-                                                rgba(255, 255, 255, 0.5) 25%,
+                            rgba(255, 255, 255, 0.5) 25%,
                             transparent 25%,
                             transparent 50%,
                             rgba(255, 255, 255, 0.5) 50%,
@@ -119,12 +122,233 @@
                             transparent 75%,
                             transparent)
     }
-    .lankmark-description ul {
+    .lankmark-description .landmark-details {
       display: none;
     }
 
-    .dis-block {
+    .dis-view {
       display: block !important;
+    }
+
+    li.active figure {
+      filter: drop-shadow(4px 8px 2px rgba(0, 0, 0, 0.15));
+    }
+
+    .landmark-details h4 {
+        -webkit-animation: testim-content-out .4s ease-in-out forwards;        
+        -moz-animation: testim-content-out .4s ease-in-out forwards;        
+        -ms-animation: testim-content-out .4s ease-in-out forwards;        
+        -o-animation: testim-content-out .4s ease-in-out forwards;        
+        animation: testim-content-out .4s ease-in-out forwards;        
+    }
+
+    .landmark-details p {
+        -webkit-animation: testim-content-out .5s ease-in-out forwards;    
+        -moz-animation: testim-content-out .5s ease-in-out forwards;    
+        -ms-animation: testim-content-out .5s ease-in-out forwards;    
+        -o-animation: testim-content-out .5s ease-in-out forwards;    
+        animation: testim-content-out .5s ease-in-out forwards;    
+    }
+    .dis-view.landmark-details h4 {
+        -webkit-animation: testim-content-in .4s ease-in-out forwards;    
+        -moz-animation: testim-content-in .4s ease-in-out forwards;    
+        -ms-animation: testim-content-in .4s ease-in-out forwards;    
+        -o-animation: testim-content-in .4s ease-in-out forwards;    
+        animation: testim-content-in .4s ease-in-out forwards;    
+    }
+
+    .dis-view.landmark-details p {
+        -webkit-animation: testim-content-in .5s ease-in-out forwards;    
+        -moz-animation: testim-content-in .5s ease-in-out forwards;    
+        -ms-animation: testim-content-in .5s ease-in-out forwards;    
+        -o-animation: testim-content-in .5s ease-in-out forwards;    
+        animation: testim-content-in .5s ease-in-out forwards;    
+    }
+
+    @-webkit-keyframes testim-content-in {
+        from {
+            opacity: 0;
+            -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+        }
+        
+        to {
+            opacity: 1;
+            -webkit-transform: translateY(0);        
+            transform: translateY(0);        
+        }
+    }
+
+    @-moz-keyframes testim-content-in {
+        from {
+            opacity: 0;
+            -moz-transform: translateY(100%);
+            transform: translateY(100%);
+        }
+        
+        to {
+            opacity: 1;
+            -moz-transform: translateY(0);        
+            transform: translateY(0);        
+        }
+    }
+
+    @-ms-keyframes testim-content-in {
+        from {
+            opacity: 0;
+            -ms-transform: translateY(100%);
+            transform: translateY(100%);
+        }
+        
+        to {
+            opacity: 1;
+            -ms-transform: translateY(0);        
+            transform: translateY(0);        
+        }
+    }
+
+    @-o-keyframes testim-content-in {
+        from {
+            opacity: 0;
+            -o-transform: translateY(100%);
+            transform: translateY(100%);
+        }
+        
+        to {
+            opacity: 1;
+            -o-transform: translateY(0);        
+            transform: translateY(0);        
+        }
+    }
+
+    @keyframes testim-content-in {
+        from {
+            opacity: 0;
+            transform: translateY(100%);
+        }
+        
+        to {
+            opacity: 1;
+            transform: translateY(0);        
+        }
+    }
+
+    @-webkit-keyframes testim-content-out {
+        from {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+        
+        to {
+            opacity: 0;
+            -webkit-transform: translateY(-100%);        
+            transform: translateY(-100%);        
+        }
+    }
+
+    @-moz-keyframes testim-content-out {
+        from {
+            opacity: 1;
+            -moz-transform: translateY(0);
+            transform: translateY(0);
+        }
+        
+        to {
+            opacity: 0;
+            -moz-transform: translateY(-100%);        
+            transform: translateY(-100%);        
+        }
+    }
+
+    @-ms-keyframes testim-content-out {
+        from {
+            opacity: 1;
+            -ms-transform: translateY(0);
+            transform: translateY(0);
+        }
+        
+        to {
+            opacity: 0;
+            -ms-transform: translateY(-100%);        
+            transform: translateY(-100%);        
+        }
+    }
+
+    @-o-keyframes testim-content-out {
+        from {
+            opacity: 1;
+            -o-transform: translateY(0);
+            transform: translateY(0);
+        }
+        
+        to {
+            opacity: 0;
+            transform: translateY(-100%);        
+            transform: translateY(-100%);        
+        }
+    }
+
+    @keyframes testim-content-out {
+        from {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        to {
+            opacity: 0;
+            transform: translateY(-100%);        
+        }
+    }
+
+    @-webkit-keyframes testim-show {
+        from {
+            opacity: 0;
+        }
+        
+        to {
+            opacity: 1;      
+        }
+    }
+
+    @-moz-keyframes testim-show {
+        from {
+            opacity: 0;
+        }
+        
+        to {
+            opacity: 1;      
+        }
+    }
+
+    @-ms-keyframes testim-show {
+        from {
+            opacity: 0;
+        }
+        
+        to {
+            opacity: 1;       
+        }
+    }
+
+    @-o-keyframes testim-show {
+        from {
+            opacity: 0;
+        }
+        
+        to {
+            opacity: 1;      
+        }
+    }
+
+    @keyframes testim-show {
+        from {
+            opacity: 0;
+        }
+        
+        to {
+            opacity: 1;
+        }
     }
     </style>
   </head>
@@ -315,7 +539,13 @@
             <div class="row">
               <div class="col-lg-6" style="margin: auto;">
                 <h4 class="heading-decorated">About us</h4>
-                <p>Element boasts clean and crispy design, bulletproof layout consistency and intuitive navigation. The template was created by top industry leaders in web design and user experience. Improve your audience engagement and loyalty with simple and user friendly tools offered by our template.</p>
+                <p>Asha Home Sanitation was started in the year 1991. With an aim to maintain the city clean and hygienic, AHS was Co-founded by Mukesh Kumar and Rajiv Ranjan Sinha. Back on April 1, 1991, the company started by two brothers along with 5 workers. Around 200 employees work under this company today with a mission to keep the city, state and the country clean.
+                </br>
+                </br>
+                The frontline workers of Asha Home Sanitation has also rendered its service in the distressful situation like floods and pandemic to keep the city safe and hygienic. 
+                </br>
+                </br>
+                Asha home sanitation believes to deliver quality service with utmost customer satisfaction.</p>
                 <div class="row row-30">
                   <div class="col-xl-6">
                     <!-- Blurb minimal-->
@@ -399,36 +629,36 @@
                       <!-- Bootstrap card-->
                       <div class="card card-custom">
                         <div class="card-custom-heading" id="accordionHeading1" role="tab">
-                          <h5 class="card-custom-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionCollapse1" aria-controls="accordionCollapse1">What are the advantages of purchasing a website template?</a>
+                          <h5 class="card-custom-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionCollapse1" aria-controls="accordionCollapse1">Are you looking for an uncompromised cleaning and hygienic quality?</a>
                           </h5>
                         </div>
                         <div class="card-custom-collapse collapse" id="accordionCollapse1" role="tabpanel" aria-labelledby="accordionHeading1">
                           <div class="card-custom-body">
-                            <p>The major advantage is price: You get a high quality design for just $20-$70. You don’t have to hire a web designer or web design studio. Second advantage is time frame: It usually takes 5-15 days for a good designer to produce a web page of such quality.</p>
+                            <p>Cleaning and maintaining hygiene standards are what we love to do. And delivering a top-class experience to our service takers is our only motivation. At Asha Home Sanitation, we work round the clock to give an uncompromised quality of work. We take all precautionary measures and work hard to keep you in a clean environment. </p>
                           </div>
                         </div>
                       </div>
                       <!-- Bootstrap card-->
                       <div class="card card-custom">
                         <div class="card-custom-heading" id="accordionHeading2" role="tab">
-                          <h5 class="card-custom-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionCollapse2" aria-controls="accordionCollapse2">Do you provide any scripts with your templates or could you do some custom programming?</a>
+                          <h5 class="card-custom-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionCollapse2" aria-controls="accordionCollapse2">Are you looking for price-friendly and affordable manpower services?</a>
                           </h5>
                         </div>
                         <div class="card-custom-collapse collapse" id="accordionCollapse2" role="tabpanel" aria-labelledby="accordionHeading2">
                           <div class="card-custom-body">
-                            <p>Our templates do not include any additional scripts. Newsletter subscriptions, search fields, forums, image galleries (in HTML versions of Flash products) are inactive. Basic scripts can be easily added at zemez.io If you are not sure that the element you’re interested in is active please contact our Support Chat for clarification.</p>
+                            <p>Quality always comes with a price. But for us, what matters most is the price, that justifies! At Asha Home Sanitation, we don't deliver service, we deliver experiences. We have a team of dedicated, loyal and hard-working frontline caregivers who serve to keep you safe and protected. We are operational full-time to bring uncompromised quality at the most affordable cost. </p>
                           </div>
                         </div>
                       </div>
                       <!-- Bootstrap card-->
                       <div class="card card-custom">
                         <div class="card-custom-heading" id="accordionHeading3" role="tab">
-                          <h5 class="card-custom-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionCollapse3" aria-controls="accordionCollapse3">In what formats are your templates available?</a>
+                          <h5 class="card-custom-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#accordionCollapse3" aria-controls="accordionCollapse3">Are you looking for advanced tools, equipment & eco-friendly cleaning services?</a>
                           </h5>
                         </div>
                         <div class="card-custom-collapse collapse" id="accordionCollapse3" role="tabpanel" aria-labelledby="accordionHeading3">
                           <div class="card-custom-body">
-                            <p>Website templates are available in Photoshop and HTML formats. Fonts are included with Photoshop file. In most templates HTML is compatible with Adobe® Dreamweaver® and Microsoft Frontpage®.</p>
+                            <p>We are tree-huggers and organic lovers! We take all precautionary measures while cleaning and use eco-friendly and organic products that are fully harmless. Our advanced tools and equipment are from the most trusted brands in the world. Our products are totally safe, noiseless and organic. And the shine of quality remains irresistible throughout the process.</p>
                           </div>
                         </div>
                       </div>
@@ -445,25 +675,33 @@
 
             <div class="col-lg-3 stats">
               <i class="fa linear-icon-calendar-empty" aria-hidden="true"></i>
-              <div class="counting" data-count="30">0</div>
+              <div>
+                <span class="counting" data-count="30">0</span><span>+</span>
+              </div>
               <h5>Years of Experience</h5>
             </div>
 
             <div class="col-lg-3 stats">
               <i class="fa linear-icon-broom" aria-hidden="true"></i>
-              <div class="counting" data-count="150">0</div>
+              <div>
+                <span class="counting" data-count="100">0</span><span>+</span>
+              </div>
               <h5>Projects</h5>
             </div>
 
             <div class="col-lg-3 stats">
               <i class="fa linear-icon-factory" aria-hidden="true"></i>
-              <div class="counting" data-count="15">0</div>
+              <div>
+                <span class="counting" data-count="25">0</span><span>+</span>
+              </div>
               <h5>Industries</h5>
             </div>
 
             <div class="col-lg-3 stats">
               <i class="fa linear-icon-happy-grin" aria-hidden="true"></i>
-              <div class="counting" data-count="100">0</div>
+              <div>
+                <span class="counting" data-count="200">0</span><span>+</span>
+              </div>
               <h5>Happy Clients</h5>
             </div>
 
@@ -475,288 +713,150 @@
 
       </section>
 
-      <section style="padding: 50px 0">
-        <h4 class="heading-decorated" style="text-align: center;">OUR STORY</h4>
-        <ul class="landmark" style="margin: auto; text-align: center; overflow-x: auto; display: flex; padding: 50px 0">
-          <li  class="active">
-            <figure class="button-shadow">
-              <div class="landmark-top"></div>
-              <div class="year">
-                2001
-              </div>
-            </figure>
-          </li>
-          <li class="">
-            <figure class="button-shadow">
-              <div class="landmark-top"></div>
-              <div class="year">
-                2002
-              </div>
-            </figure>
-          </li>
-          <li class="">
-            <figure class="button-shadow">
-              <div class="landmark-top"></div>
-              <div class="year">
-                2003
-              </div>
-            </figure>
-          </li>
-          <li>
-            <figure class="button-shadow">
-              <div class="landmark-top"></div>
-              <div class="year">
-                2004
-              </div>
-            </figure>
-          </li>
-          <li>
-            <figure class="button-shadow">
-              <div class="landmark-top"></div>
-              <div class="year">
-                2005
-              </div>
-            </figure>
-          </li>
-          <li>
-            <figure class="button-shadow">
-              <div class="landmark-top"></div>
-              <div class="year">
-                2006
-              </div>
-            </figure>
-          </li>
-          <li>
-            <figure class="button-shadow">
-              <div class="landmark-top"></div>
-              <div class="year">
-                2007
-              </div>
-            </figure>
-          </li>
-          <li>
-            <figure class="button-shadow">
-              <div class="landmark-top"></div>
-              <div class="year">
-                2008
-              </div>
-            </figure>
-          </li>
-          <li>
-            <figure class="button-shadow">
-              <div class="landmark-top"></div>
-              <div class="year">
-                2009
-              </div>
-            </figure>
-          </li>
-          <li>
-            <figure class="button-shadow">
-              <div class="landmark-top"></div>
-              <div class="year">
-                2010
-              </div>
-            </figure>
-          </li>
-        </ul>
-        <div class="lankmark-description container" style="padding: 50px 0;">
-          <ul class="dis-block landmark-details" style="list-style-type: disc !important;">
-            <li>
-              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> 1 &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <section style="padding-top: 100px">
+        <div class="container">
+          <h3 class="heading-decorated" style="text-align: center;">OUR STORY</h3>
+          <ul class="landmark" style="margin: auto; text-align: center; overflow-x: auto; display: flex; padding: 50px 0">
+            <li  class="active">
+              <figure>
+                <div class="landmark-top"></div>
+                <div class="year">
+                  1991
+                </div>
+              </figure>
             </li>
-            </br>
+            <li class="">
+              <figure>
+                <div class="landmark-top"></div>
+                <div class="year">
+                  1995
+                </div>
+              </figure>
+            </li>
+            <li class="">
+              <figure>
+                <div class="landmark-top"></div>
+                <div class="year">
+                  2000
+                </div>
+              </figure>
+            </li>
             <li>
-              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <figure>
+                <div class="landmark-top"></div>
+                <div class="year">
+                  2005
+                </div>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <div class="landmark-top"></div>
+                <div class="year">
+                  2010
+                </div>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <div class="landmark-top"></div>
+                <div class="year">
+                  2015
+                </div>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <div class="landmark-top"></div>
+                <div class="year">
+                  2020
+                </div>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <div class="landmark-top"></div>
+                <div class="year">
+                  2021
+                </div>
+              </figure>
             </li>
           </ul>
-          <ul class="landmark-details" style="list-style-type: disc !important;">
-            <li>
-              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> 2 &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </li>
-            </br>
-            <li>
-              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </li>
-          </ul>
-          <ul class="landmark-details" style="list-style-type: disc !important">
-            <li>
-              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> 3 &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </li>
-            </br>
-            <li>
-              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </li>
-          </ul>
-          <ul class="landmark-details" style="list-style-type: disc !important">
-            <li>
-              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </li>
-            </br>
-            <li>
-              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </li>
-          </ul>
-          <ul class="landmark-details" style="list-style-type: disc !important">
-            <li>
-              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </li>
-            </br>
-            <li>
-              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </li>
-          </ul>
-          <ul class="landmark-details" style="list-style-type: disc !important">
-            <li>
-              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </li>
-            </br>
-            <li>
-              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </li>
-          </ul>
-          <ul class="landmark-details" style="list-style-type: disc !important">
-            <li>
-              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </li>
-            </br>
-            <li>
-              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </li>
-          </ul>
-          <ul class="landmark-details" style="list-style-type: disc !important">
-            <li>
-              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </li>
-            </br>
-            <li>
-              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </li>
-          </ul>
-          <ul class="landmark-details" style="list-style-type: disc !important">
-            <li>
-              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </li>
-            </br>
-            <li>
-              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </li>
-          </ul>
-          <ul class="landmark-details" style="list-style-type: disc !important">
-            <li>
-              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </li>
-            </br>
-            <li>
-              <span style="font-weight: bold; font-size: 20px; padding-right: 10px;">&#8226;</span> &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </li>
-          </ul>
+          <div class="lankmark-description container" style="padding: 50px 0;">
+            <div class="dis-view landmark-details" style="list-style-type: disc !important;">
+              <h4 style="color: #d97730;">The Beginning</h4>
+              <p>
+                Let's take you back to a story from 1991. It is a story of a dream that took 30 years of struggle to turn into reality. This story is of Bihar's best cleaning and sanitizing service company, Asha Home Sanitation. 
+                </br>
+                </br>
+                Asha Home Sanitation was founded by two brothers, Mukesh Sinha and Ravi Ranjan Sinha. These two brothers started the company in the name of their mother Asha Devi and laid the stone of establishment on April 1, 1991. The company is headquartered in Patna, Bihar. AHS started along with 5 workers with the vision to keep the surroundings clean, healthy and hygienic.
+              </p>
+            </div>
+            <div class="landmark-details" style="list-style-type: disc !important;">
+              <h4 style="color: #d97730;">The Beginning</h4>
+              <p>
+                But this start was not easy. It required a lot of hard work. Starting with the health industry, specifically, the nursing home was tough. The team of Asha Home Sanitation worked 16 hours a day to fulfill the commitment it had made with its clients.
+                </br>
+                </br>
+                Everyday cleaning and sanitation services were dedicated to nursing homes, hospitals and factories regardless of any festive break. It was tough but the team took the challenge and worked with dedication. Shortly, this hard work brought a buzz in the city about their customer-friendly services.
+              </p>
+            </div>
+            <div class="landmark-details" style="list-style-type: disc !important;">
+              <h4 style="color: #d97730;">The Beginning</h4>
+              <p>
+                Leaping to 2000, the company had a name and fame in the city. Asha home sanitation became the first choice of many big businesses, companies and public places. Asha Home Sanitation was serving the city's biggest entertainment theatres and buildings like Mona Cinemas, Fun Cinema Regent and Elphinstone. ASH became the name of quality for office workers. 
+                </br>
+                </br>
+                In this duration, Asha Home Sanitation also broadened its services like floor polishing, scrubbing, glass cleaning, waste pick up, etc. Their work got acknowledged and positively reviewed due to the timeliness of work.
+              </p>
+            </div>
+            <div class="landmark-details" style="list-style-type: disc !important;">
+              <h4 style="color: #d97730;">The Beginning</h4>
+              <p>
+                Everything looked fine until the failure hits you hard. It was 2005 when the company's clientele took a dip. Many big names withdrew from the service due to poor economical conditions. It was hard times for AHS team to resist. But the bonding of trust and diligence persisted within the AHS family. After a year and a half, the company dragged itself out of the lows and started blooming again.
+              </p>
+            </div>
+            <div class="landmark-details" style="list-style-type: disc !important;">
+              <h4 style="color: #d97730;">The Beginning</h4>
+              <p>
+                After 5 years of ups and downs, Asha Home Sanitation witnessed a growth of 19.3% in its job employment. The company transcended its base to the other 3 districts of Bihar. Residential and commercial services delivery was in full swing. Manpower and caregiving services introduced during this period. By the end of 2010, nearly 30% of the city's healthcare and entertainment services were taking Asha Home Sanitation services.
+              </p>
+            </div>
+            <div class="landmark-details" style="list-style-type: disc !important;">
+              <h4 style="color: #d97730;">The Beginning</h4>
+              <p>
+                It was 2015 when food and hospitality were seeking a tremendous spike in the city. Cafes, restaurants and hotels were the new business. Meanwhile, the food industry is also about safety, cleanliness and hygiene. To provide uncompromised quality and promote food hygiene, AHS started serving in food and hospitality cleaning. Advanced tools, techniques and organic products were used for safer stay and dine-in.
+                </br>
+                </br>
+                AHS introduced its services to malls and commercial complexes during this period. AHS also delivered the best manpower services, be it friendly staff or driver, gardener or security guards. Every worker dedicated himself work round the clock to give comfort to the customers. AHS also promoted women's empowerment by equipping women with employment opportunities in gender-neutral roles. 
+              </p>
+            </div>
+            <div class="landmark-details" style="list-style-type: disc !important;">
+              <h4 style="color: #d97730;">The Beginning</h4>
+              <p>
+                2020 was the year of frontline workers. This leap was hard to take. In this period, Asha Home Sanitation frontline workers rendered their service in the adversity of Bihar Floods and COVID-19 pandemic. The whole city was demanding sanitization services. With the rise of demand, the market also hiked the cost of the services.
+                </br>
+                </br>
+                But to combat the lockdown challenges, AHS stood to its affordable charge. AHS committed itself to work day and night to meet the demands also took care of its team. All types of cleaning, sanitization, sanitation and manpower services delivered throughout the pandemic with hiking a single penny.
+              </p>
+            </div>
+            <div class="landmark-details" style="list-style-type: disc !important;">
+              <h4 style="color: #d97730;">The Beginning</h4>
+              <p>
+                And today, AHS is 30 years old with more than 25 industry experience. Asha Home Sanitation is now a family of 200 well-trained cleaning experts. It still continues to render its service towards Clean India (Swacch Bharat). 
+                </br>
+                </br>
+                This story will continue because it is a never-ending journey of hard work, quality and dedication with a bond of trust. Thank you for listening to us.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Testimonials-->
       <section class="section-md bg-default text-center decor-text" data-content="Testimonials">
         <div class="container">
-          <h4 class="heading-decorated">WHAT PEOPLE SAY</h4>
+          <h3 class="heading-decorated">WHAT PEOPLE SAY</h3>
           <div class="row row-50">
             <div class="col-md-6">
               <!-- Quote default-->
@@ -769,9 +869,9 @@
                   </g>
                 </svg>
                 <div class="quote-default__text">
-                  <p class="q">In our case, there couldn’t be any business without our new website! Element provided us with the template that satisfied all our needs and they were the only company that within the first meeting made me feel very confident and comfortable that they understood and could produce what we envisioned. It’s been a terrific experience working with them.</p>
+                  <p class="q">Satisfied with the cleaning. The cleaning work is done with remarkable precision.  Punctual staff and customer servicing are really good. They take all precautionary measures, the products are good. Recommended on the basis of service experience. </p>
                 </div>
-                <p class="quote-default__cite">Ramesh Pandit</p>
+                <p class="quote-default__cite">Rakesh Albela</p>
               </div>
             </div>
             <div class="col-md-6">
@@ -785,9 +885,9 @@
                   </g>
                 </svg>
                 <div class="quote-default__text">
-                  <p class="q">My company just launched our completely revamped website based on your template and I couldn't be any happier with the way it turned out, and our experience with Element. We purchased your template and transformed our old website into a modern and incredibly attractive site. Their team is a perfect mix of left and right brains as they provided me with everything I wanted to know.</p>
+                  <p class="q">The sanitization services were well carried of. AHS took all precautionary measures while the conduct. The staffs were well trained, friendly and worked well. I like AHS and will take the services again if needed. Keep the good work up. </p>
                 </div>
-                <p class="quote-default__cite">Rima Sharma</p>
+                <p class="quote-default__cite">Manshi Kanodia</p>
               </div>
             </div>
           </div>
@@ -798,7 +898,7 @@
         <div class="container">
           <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
             <div class="col-sm-10 col-md-6 col-lg-10 col-xl-4">
-              <h6>About</h6>
+              <h3>About</h3>
               <p>
                 We are the best cleaning and sanitation company of Bihar. We are the caregivers and one of the leading names in housekeeping, cleaning, disinfection and sanitation services with more than 30 years of experience. The advanced tools, high quality products and modern techniques applied to give quality of work makes us stand out.
               </p>
@@ -1068,17 +1168,17 @@
 
               // var list = document.getElementsByClassName("landmark-details");
 
-              // var active = document.getElementsByClassName("dis-block");
+              // var active = document.getElementsByClassName("dis-view");
 
-              // active.classList.remove("dis-block");
+              // active.classList.remove("dis-view");
 
-              // list[index].classList.add("dis-block");
+              // list[index].classList.add("dis-view");
 
-              $('.dis-block').removeClass("dis-block");
+              $('.dis-view').removeClass("dis-view");
 
               var list = $(".landmark-details");
 
-              $(list[index]).addClass("dis-block");
+              $(list[index]).addClass("dis-view");
 
               // $(".lankmark-description ul:eq(index)").css("display", "block");
 

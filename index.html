@@ -22,7 +22,7 @@
     section#counter-stats {
       display: flex;
       justify-content: center;
-      background: #80deea;
+      background: #d97730;
       padding-top: 50px;
       padding-bottom: 100px;
     }
@@ -35,17 +35,17 @@
     }
 
     .stats .fa {
-      color: #19629b;
+      color: #fff;
       font-size: 60px;
       margin-top: 50px;
     }
 
-    .counting {
-      color: #19629b;
+    .counting, .stats span {
+      color: #fff;
     }
 
     #counter-stats h5 {
-      color: #19629b;
+      color: #fff;
     }
     </style>
   </head>
@@ -307,25 +307,33 @@
 
             <div class="col-lg-3 stats">
               <i class="fa linear-icon-calendar-empty" aria-hidden="true"></i>
-              <div class="counting" data-count="30">0</div>
+              <div>
+                <span class="counting" data-count="30">0</span><span>+</span>
+              </div>
               <h5>Years of Experience</h5>
             </div>
 
             <div class="col-lg-3 stats">
               <i class="fa linear-icon-broom" aria-hidden="true"></i>
-              <div class="counting" data-count="150">0</div>
+              <div>
+                <span class="counting" data-count="100">0</span><span>+</span>
+              </div>
               <h5>Projects</h5>
             </div>
 
             <div class="col-lg-3 stats">
               <i class="fa linear-icon-factory" aria-hidden="true"></i>
-              <div class="counting" data-count="15">0</div>
+              <div>
+                <span class="counting" data-count="25">0</span><span>+</span>
+              </div>
               <h5>Industries</h5>
             </div>
 
             <div class="col-lg-3 stats">
               <i class="fa linear-icon-happy-grin" aria-hidden="true"></i>
-              <div class="counting" data-count="100">0</div>
+              <div>
+                <span class="counting" data-count="200">0</span><span>+</span>
+              </div>
               <h5>Happy Clients</h5>
             </div>
 
@@ -782,16 +790,18 @@
           <div class="row row-30 justify-content-center">
             <div class="col-sm-10 col-lg-6"><img src="images/cleaning-work-panta.png" alt="" width="650" height="495"/>
             </div>
-            <div class="col-sm-10 col-lg-6">
+            <div class="col-sm-10 col-lg-6" style="margin: auto;">
               <!-- Blurb circle-->
               <article class="blurb blurb-circle">
                 <div class="unit flex-row unit-spacing-md">
                   <div class="unit-left">
                     <div class="blurb-circle__icon"><span class="icon linear-icon-menu3"></span></div>
                   </div>
-                  <div class="unit-body">
-                    <p class="blurb__title heading-6">Fill Enquiry Form</p>
-                    <p>Firstly, our designers create the concept of a template, which can be changed and modified.</p>
+                  <div class="unit-body" style="display: flex;">
+                    <div style="margin: auto 0;">
+                      <p class="blurb__title heading-6">Fill the form</p>
+                      <p>Select the services you seek from us from options.</p>
+                    </div>
                   </div>
                 </div>
               </article>
@@ -801,21 +811,25 @@
                   <div class="unit-left">
                     <div class="blurb-circle__icon"><span class="icon linear-icon-telephone2"></span></div>
                   </div>
-                  <div class="unit-body">
-                    <p class="blurb__title heading-6">We will Call You</p>
-                    <p>Then our developers begin to work on implementing the template’s final look and features.</p>
+                  <div class="unit-body" style="display: flex;">
+                    <div style="margin: auto 0;">
+                      <p class="blurb__title heading-6">We will call you</p>
+                      <p>We will connect to you to know your expectations.</p>
+                    </div>
                   </div>
                 </div>
               </article>
               <!-- Blurb circle-->
               <article class="blurb blurb-circle">
                 <div class="unit flex-row unit-spacing-md">
-                  <div class="unit-left">
+                  <div class="unit-left" >
                     <div class="blurb-circle__icon"><span class="icon linear-icon-checkmark-circle"></span></div>
                   </div>
-                  <div class="unit-body">
-                    <p class="blurb__title heading-6">Booking Confirm</p>
-                    <p>Finally, our QA experts make sure that everything works perfectly just as you would expect.</p>
+                  <div class="unit-body" style="display: flex;">
+                    <div style="margin: auto 0;">
+                      <p class="blurb__title heading-6">Booking Confirm</p>
+                      <p>Confirm your booking by locking the services.</p>
+                    </div>
                   </div>
                 </div>
               </article>
